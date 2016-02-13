@@ -16,7 +16,7 @@
              (beer-song/verse 8) => verse-8)
        (fact "returns verse 2 when given number 2"
              (beer-song/verse 2) => verse-2)
-       (future-fact "returns verse 1 when given number 1"
+       (fact "returns verse 1 when given number 1"
              (beer-song/verse 1) => verse-1)
        (future-fact "returns verse 0 when given number 0"
              (beer-song/verse 0) => verse-0))
