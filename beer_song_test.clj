@@ -14,7 +14,7 @@
 (facts "verse function"
        (fact "returns verse 8 when given number 8"
              (beer-song/verse 8) => verse-8)
-       (future-fact "returns verse 2 when given number 2"
+       (fact "returns verse 2 when given number 2"
              (beer-song/verse 2) => verse-2)
        (future-fact "returns verse 1 when given number 1"
              (beer-song/verse 1) => verse-1)
@@ -22,8 +22,14 @@
              (beer-song/verse 0) => verse-0))
 
 (future-facts "sing function"
-       (fact " returns song 8 to 6 when given number 8 and 6"
+       (fact "returns song 8 to 6 when given number 8 and 6"
              (beer-song/sing 8 6) => song-8-6)
        (fact "returns song 3 to 0 when given number 3 only"
              (beer-song/sing 3) => song-3-0))
+
+(facts "pluralise"
+       (fact "returns 's' if greater than 1"
+             (pluralise 2) => "s")
+       (fact "returns '' if less than or equal to 1"
+             (pluralise 1) => nil))
 
