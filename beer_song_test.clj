@@ -24,7 +24,7 @@
 (facts "sing function"
        (fact "returns song 8 to 6 when given number 8 and 6"
              (beer-song/sing 8 6) => song-8-6)
-       (future-fact "returns song 3 to 0 when given number 3 only"
+       (fact "returns song 3 to 0 when given number 3 only"
              (beer-song/sing 3) => song-3-0))
 
 (facts "pluralise"
